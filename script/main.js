@@ -32,11 +32,11 @@ const animationTimeline = () => {
 
   textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
     .split("")
-    .join("</span><span>")}</span`;
+    .join("</span><span>")}</span>`;
 
   hbd.innerHTML = `<span>${hbd.innerHTML
     .split("")
-    .join("</span><span>")}</span`;
+    .join("</span><span>")}</span>`;
 
   const ideaTextTrans = {
     opacity: 0,
@@ -135,7 +135,7 @@ const animationTimeline = () => {
     .to(".idea-3 strong", 0.5, {
       scale: 1.2,
       x: 10,
-      backgroundColor: "rgb(21, 161, 237)",
+      backgroundColor: "#DE7DF3",
       color: "#fff"
     })
     .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
@@ -209,7 +209,7 @@ const animationTimeline = () => {
       0.2
     )
     .from(
-      ".lydia-dp",
+      ".photo-dp",
       0.5,
       {
         scale: 3.5,
@@ -249,7 +249,7 @@ const animationTimeline = () => {
       {
         scale: 1,
         rotationY: 0,
-        color: "#ff69b4",
+        color: "#DE7DF3",
         ease: Expo.easeOut
       },
       0.1,
