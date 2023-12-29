@@ -9,10 +9,19 @@
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/glowing.css">
 </head>
 
 <body>
-  <div class="container">
+<audio class="song">
+  <source src="./img/Happy_Birthday.mp3" type="audio/mpeg">
+  Ah dommage y'aura pas de son !
+</audio>
+<div class="container">
+  <div class="zero">
+  <button class='glowing-btn' id="play"><span class='glowing-txt'>D<span class='faulty-letter'>é</span>marrer<br />la surpri<span class='faulty-letter2'>s</span>e !</span></button>
+
+  </div>
     <div class="one">
       <h1 class="one">
         <span data-node-name="greeting">Hey</span>
@@ -125,6 +134,7 @@
     <div class="nine">
       <p data-node-name="outroText">Okay, now come back and tell me if you liked it.</p>
       <p data-node-name="outroText2"></p>
+      <p><img id="brand" src="./img/brand.svg" alt="Logo hopecalypse" /></p>
       <p id="replay" data-node-name="replayText">Or click, if you want to watch it again.</p>
       <p class="last-smile" data-node-name="outroSmiley">:)</p>
     </div>

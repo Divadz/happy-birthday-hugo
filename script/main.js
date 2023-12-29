@@ -302,5 +302,13 @@ const animationTimeline = () => {
   });
 };
 
-// Run fetch and animation in sequence
-fetchData();
+document.getElementById('play').addEventListener("click", () => {
+    var audio = document.getElementsByClassName('song')[0];
+    audio.play();
+    document.getElementById('play').style.display = 'none';
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+    }
+    // Run fetch and animation in sequence
+    fetchData();
+});
